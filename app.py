@@ -843,6 +843,8 @@ def generate():
                 ## start for new sheet type from her follow the same identation    
     zipf.close()
     os.remove(cache['file'])
+    shutil.rmtree("static")
+    os.mkdir("static")
     
     
     session.pop('file',None)
