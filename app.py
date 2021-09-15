@@ -59,8 +59,8 @@ def generate():
     
    
         
-    t=session.get("file","not set")
-    if t == "not set":
+    
+    if not 'file' in cache.keys():
          return render_template("home.html",mg="No File Found !")    
         
     if request.method == "POST":
