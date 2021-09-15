@@ -61,7 +61,7 @@ def generate():
         
     t=session.get("file","not set")
     if t == "not set":
-         return render_template("home.html",mg="no file found")    
+         return render_template("home.html",mg="No File Found !")    
         
     if request.method == "POST":
         inputFile=session.get("file","not set")
