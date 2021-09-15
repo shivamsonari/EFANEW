@@ -61,7 +61,7 @@ def generate():
         
     if not 'file' in cache.keys() or not session.get("file"):
     
-         return render_template("home.html",mg="No File Found !")    
+         return render_template("home.html",mg="No File Found ! Upload File !")    
         
     if request.method == "POST":
         inputFile=session.get("file","not set")
