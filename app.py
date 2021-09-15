@@ -865,7 +865,7 @@ def upload_file():
       session["file"]=file.filename
       
       if not session.get("file"):
-          return render_template("home.html", messaage="upload file first")
+          return render_template("home.html", messaage="Select File First !")
           
       
       cache['file']=file.filename
