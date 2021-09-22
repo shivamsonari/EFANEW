@@ -59,7 +59,7 @@ def generate():
     
    
         
-    if not 'file' in cache.keys() or not session.get("file"):
+    if not session.get("file"):
     
          return render_template("home.html",mg="No File Found ! Upload File !")    
         
